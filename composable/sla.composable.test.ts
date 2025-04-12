@@ -16,7 +16,6 @@ it("halves SLA for premium plan", () => {
     expect(slaCalculator.responseTime("premium", "normal", false)).toBe(12);
 });
 
-
 it("increases SLA by 4 hours on weekends", () => {
     const slaCalculator = new SLA();
     expect(slaCalculator.responseTime("basic", "normal", true)).toBe(28);
